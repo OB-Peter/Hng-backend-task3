@@ -18,10 +18,14 @@ app.use("/countries", countryRoutes);
 
 // Start server
 const PORT = process.env.PORT || 3000;
+app.get("/", (req, res) => {
+  res.send("Country API is running");
+});
+
 
 app.listen(PORT, async () => {
   try {
-    await sequelize.sync({ alter: true });
+    await sequelize.sync({ alter: true });++
     console.log("✅ Database connected and synced successfully!");
     console.log(`🚀 Server running on http://localhost:${PORT}`);
   } catch (err) {
