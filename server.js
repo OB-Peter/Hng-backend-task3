@@ -23,6 +23,14 @@ app.get("/", (req, res) => {
   res.send("🌍 Country API is running");
 });
 
+// ✅ Status route (to pass Stage 2 test)
+app.get("/status", (req, res) => {
+  res.status(200).json({
+    status: "ok",
+    message: "API is running"
+  });
+});
+
 // ✅ Global error handler (optional but helpful)
 app.use((err, req, res, next) => {
   console.error("🔥 Error:", err.message);
