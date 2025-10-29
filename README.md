@@ -42,12 +42,7 @@ npm install
 
 Create a file named .env in the root directory with the following variables:
 
-PORT=3000
-DB_HOST=centerbeam.proxy.rlwy.net
-DB_PORT=33579
-DB_USER=root
-DB_PASSWORD=PgJZVyxSPHeudSXmrlEODewEiZDzrlAz
-DB_NAME=railway
+
 
 
 ⚠️ Never commit .env to GitHub. Make sure .env is included in .gitignore.
